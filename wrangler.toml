@@ -1,0 +1,10 @@
+name = "drumkit"
+compatibility_date = "2025-05-24"
+workers_dev = false
+
+routes = [
+  { pattern = "cskartikey.dev/drumkit*", zone_name = "cskartikey.dev" },
+]
+
+[assets]
+directory = "public"

@@ -1,0 +1,9 @@
+{
+  "name": "drumkit",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "deploy": "npm run build && npx wrangler@4.18.0 deploy",
+    "preview": "npm run build && npx wrangler@4.18.0 dev"
+  }
+}

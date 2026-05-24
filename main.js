@@ -2,6 +2,8 @@ const BARS = " ▁▂▃▄▅▆▇█";
 const SECRET = ["k", "i", "n", "d"]; // thanks kashvi, max, chris, shashi and prerna ma'am for teaching me what it means to be kind & strong.
 const WAVE_COLS = 40;
 
+const BASE = location.pathname.startsWith("/drumkit") ? "/drumkit/" : "";
+
 // initially, this was just letters for my name i.e K A R T I K E Y. I can't be bothered to have audio for every key.... so we're re-using this
 const SOUND_POOL = [
   "audio/k.wav",
@@ -13,7 +15,7 @@ const SOUND_POOL = [
   "audio/k2.wav",
   "audio/y.wav",
   "audio/boom.wav",
-];
+].map((path) => BASE + path);
 
 const QWERTY = [
   ["`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "="],
