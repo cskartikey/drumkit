@@ -1,4 +1,4 @@
-const BARS = " ▁▂▃▄▅▆▇█";
+const BARS = " \u2581\u2582\u2583\u2584\u2585\u2586\u2587";
 const SECRET = ["k", "i", "n", "d"]; // thanks kashvi, max, chris, shashi and prerna ma'am for teaching me what it means to be kind & strong.
 const WAVE_COLS = 40;
 
@@ -142,7 +142,7 @@ function updateWaveDisplay() {
 
   const wave = activeAnalyser
     ? renderBars(activeAnalyser)
-    : "▁".repeat(WAVE_COLS);
+    : "\u2581".repeat(WAVE_COLS);
 
   waveformEl.textContent = `${wave}\n${statusLine}`;
 }
